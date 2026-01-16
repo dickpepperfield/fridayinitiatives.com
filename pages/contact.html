@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Friday Initiatives</title>
+  <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <a href="/" class="logo">FRIDAY INITIATIVES</a>
+    <nav>
+      <a href="/#about">About Us</a>
+      <a href="/#case-studies">Case Studies</a>
+      <a href="services.html">Services</a>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- CONTACT SECTION -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid-2">
+      <!-- Left side - Purple background -->
+      <div class="section-purple" style="padding: 60px 40px; border-radius: 16px; margin: -20px 0;">
+        <h2 class="text-white">Get in Touch</h2>
+        <p class="text-white" style="margin-bottom: 30px;">Tell us about your goals. We'll reply within one business day.</p>
+        <p class="text-white" style="margin-bottom: 20px;"><strong>Email:</strong></p>
+        <p class="text-white" style="margin-bottom: 40px;">emma@fridayinitiatives.com</p>
+        
+        <h4 class="text-white" style="margin-bottom: 20px;">Office Locations</h4>
+        <div style="margin-bottom: 30px;">
+          <p class="text-white" style="font-weight: 600; margin-bottom: 8px;">London, UK</p>
+          <p class="text-white" style="opacity: 0.9;">Your address here</p>
+        </div>
+        <div style="margin-bottom: 30px;">
+          <p class="text-white" style="font-weight: 600; margin-bottom: 8px;">Melbourne, Australia</p>
+          <p class="text-white" style="opacity: 0.9;">Your address here</p>
+        </div>
+        <div>
+          <p class="text-white" style="font-weight: 600; margin-bottom: 8px;">Singapore</p>
+          <p class="text-white" style="opacity: 0.9;">Your address here</p>
+        </div>
+      </div>
+
+      <!-- Right side - Contact Form -->
+      <div style="padding: 40px;">
+        <h3 style="margin-bottom: 30px;">Send us a message</h3>
+        
+        <form id="contact-form" style="display: grid; gap: 20px;">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button type="submit" class="btn" style="width: 100%; text-align: center;">Send Message</button>
+          <p class="muted" style="font-size: 12px;">We'll get back to you within one business day.</p>
+        </form>
+
+        <!-- HubSpot Form Placeholder -->
+        <div id="hubspot-form" style="margin-top: 40px; padding-top: 40px; border-top: 1px solid #ddd;">
+          <p class="muted" style="font-size: 12px;">HubSpot form will be embedded here</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER SECTION -->
+<section class="section section-lilac">
+  <div class="container text-center">
+    <h2>Sign up to our newsletter</h2>
+    <p style="margin-bottom: 20px;">Stay updated with the latest insights on data governance and strategy.</p>
+    <div style="display: flex; gap: 12px; justify-content: center; max-width: 400px; margin: 0 auto;">
+      <input type="email" placeholder="Enter your email" style="flex: 1; padding: 12px 16px; border: 1px solid #ddd; border-radius: 999px; font-size: 14px;">
+      <button class="btn">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="grid grid-4 mb-40">
+      <div>
+        <h4>Friday Initiatives</h4>
+        <p class="muted" style="color: #aaa;">Data governance & value, delivered with clarity.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="/#case-studies">Case Studies</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="news.html">News</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="news.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in Touch</h4>
+        <p class="muted" style="color: #aaa;">London & Melbourne<br>emma@fridayinitiatives.com</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Friday Initiatives. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+<script>
+// Simple form submission handler
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Thank you for your message! We will get back to you soon.');
+  this.reset();
+});
+</script>
+</body>
+</html>
